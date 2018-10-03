@@ -1,7 +1,7 @@
 # Install InSpec on Unix/Linux/Mac
 
 ## Option 1 Install InSpec (Package installer)
-First things first: We need InSpec on our workstation. For production and standalone environments, I recommend the ChefDK package, since it gives you Chef + Test-Kitchen + InSpec. You can download the package from [https://downloads.chef.io/](https://downloads.chef.io/).
+First things first: We need InSpec on our workstation. For production and standalone environments, I recommend the ChefDK package, since it gives you Chef + Test-Kitchen + InSpec. You can download the package from [https://downloads.chef.io/chefdk](https://downloads.chef.io/chefdk).
 
 ## Option 2 Install InSpec (Terminal install)
 Another option is to install InSpec via a command line script:
@@ -17,7 +17,7 @@ Once InSpec is installed, run `inspec version` to verify that the installation w
 # Install InSpec on Windows
 
 ## Option 1 (package installer)
-First things first: We need InSpec on our workstation. For production and standalone environments, I recommend the ChefDK package, since it gives you Chef + Test-Kitchen + InSpec. You can download the package from [https://downloads.chef.io/](https://downloads.chef.io/).
+First things first: We need InSpec on our workstation. For production and standalone environments, I recommend the ChefDK package, since it gives you Chef + Test-Kitchen + InSpec. You can download the package from [https://downloads.chef.io/chefdk](https://downloads.chef.io/chefdk).
 
 ## Option 2 (command line)
 Another option is to install InSpec via a Powershell script:
