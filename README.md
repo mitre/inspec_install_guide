@@ -1,5 +1,18 @@
 # Install InSpec on Unix/Linux/Mac
 
+## Versioning and State of Development
+This project uses the [Semantic Versioning Policy](https://semver.org/). 
+
+### Branches
+The master branch contains the latest version of the guide up to a new release. 
+
+Other branches contain feature-specific updates to the guide. 
+
+### Tags
+Tags indicate official releases of the guide.
+
+Please note 0.x releases are works in progress (WIP) and may change at any time.   
+
 ## Option 1 Install InSpec (Package installer)
 First things first: We need InSpec on our workstation. For production and standalone environments, I recommend the ChefDK package, since it gives you Chef + Test-Kitchen + InSpec. You can download the package from [https://downloads.chef.io/chefdk](https://downloads.chef.io/chefdk).
 
