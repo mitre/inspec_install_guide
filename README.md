@@ -1,51 +1,46 @@
 # How to Install InSpec
 
-## Install InSpec on Unix/Linux/Mac
-
-### Versioning and State of Development
+## Versioning and State of Development
 
 This project uses the [Semantic Versioning Policy](https://semver.org/).
 
-#### Branches
+### Branches
 
 The master branch contains the latest version of the guide up to a new release.
 
 Other branches contain feature-specific updates to the guide.
 
-#### Tags
+### Tags
 
 Tags indicate official releases of the guide.
 
 Please note 0.x releases are works in progress (WIP) and may change at any time.
 
-### Option 1: Install InSpec (Package installer)
+## Instructions
 
-First things first: We need InSpec on our workstation. For production and standalone environments, I recommend the ChefDK package, since it gives you Chef + Test-Kitchen + InSpec. You can download the package from [https://downloads.chef.io/chefdk](https://downloads.chef.io/chefdk).
+First things first, we need InSpec on our workstation. For production and standalone environments, the InSpec omnibus package gives you the bare minimum of what you need. This can be manually installed from a downloaded package or installed using a handy installer script provided by Chef.
 
-### Option 2: Install InSpec (Terminal install)
+### Option 1: Manual installation
 
-Another option is to install InSpec via a command line script:
+This option is best when working in an air-gapped environment. Downloading the latest package files for InSpec from [Chef's downloads page](https://downloads.chef.io/inspec) will allow you to transfer the installers where you need them to go, then, depending on the operating system, install them in the platform-appropriate manner.
 
-```
-$ curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -channel stable -P chefdk
-```
+### Option 2: Automated installation
 
-### After Install
+Another option is to install InSpec via a command line script, provided and maintained by Chef. This will only work if your firewall does not restrict WAN access to the following domains:
 
-Once InSpec is installed, run `inspec version` to verify that the installation was successful.
+- `omnitruck.chef.io`
+- `packages.chef.io`
 
-## Install InSpec on Windows
-
-### Option 1: Package installer
-
-First things first: We need InSpec on our workstation. For production and standalone environments, I recommend the ChefDK package, since it gives you Chef + Test-Kitchen + InSpec. You can download the package from [https://downloads.chef.io/chefdk](https://downloads.chef.io/chefdk).
-
-### Option 2: Command line
-
-Another option is to install InSpec via a Powershell script:
+Unix/Linux/Mac:
 
 ```
-$ . { iwr -useb https://omnitruck.chef.io/install.ps1 } | iex; install -channel stable -project chefdk
+$ curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -c stable -P inspec -v 3
+```
+
+Windows:
+
+```
+$ . { iwr -useb https://omnitruck.chef.io/install.ps1 } | iex; install -channel stable -project inspec -version 3
 ```
 
 ### After Install
