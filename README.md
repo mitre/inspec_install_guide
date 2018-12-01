@@ -1,21 +1,5 @@
 # How to Install InSpec
 
-## Versioning and State of Development
-
-This project uses the [Semantic Versioning Policy](https://semver.org/).
-
-### Branches
-
-The master branch contains the latest version of the guide up to a new release.
-
-Other branches contain feature-specific updates to the guide.
-
-### Tags
-
-Tags indicate official releases of the guide.
-
-Please note 0.x releases are works in progress (WIP) and may change at any time.
-
 ## Instructions
 
 First things first, we need InSpec on our workstation. For production and standalone environments, the InSpec omnibus package gives you the bare minimum of what you need. This can be manually installed from a downloaded package or installed using a handy installer script provided by Chef.
@@ -46,6 +30,12 @@ $ . { iwr -useb https://omnitruck.chef.io/install.ps1 } | iex; install -channel 
 ### After Install
 
 Once InSpec is installed, run `inspec version` to verify that the installation was successful.
+
+## Versioning
+
+This project uses the [Semantic Versioning Policy](https://semver.org/).
+
+See [VERSIONING.md](VERSIONING.md) for more details.
 
 ## NOTICE
 
